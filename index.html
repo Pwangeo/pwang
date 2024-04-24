@@ -3,79 +3,183 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<title>평화로운 퇴마도구</title>
 	<style>
-	html{word-break: keep-all;}
-	nav{margin:0;background-color: rgb(230, 40, 57); position: fixed; top:0; height: 50px; width: 100%; z-index: 1}
-    header{margin:0;background-color: rgb(230, 40, 57); padding-bottom: 300px;}
-    body{margin:0; width:100%; overflow-x: hidden; overflow-y: auto;}
-    h2,p,h1,h3{margin: 0 ;font-family: 'KimjungchulMyungjo-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulMyungjo-Bold.woff2') format('woff2');}  
-    .wrap{width: 1000px; margin: auto;}
-    h1{font-family:'SF_HambakSnow';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
-    font-weight: normal;font-style: normal; font-size: 5rem ; text-align: center; color: black;padding-top: 100px;}
-    h2{font-size:4rem; color: black; padding: 0px;}
-    
-    .sogae{}
-    p{color: black;}
-    a{display: block; color: black;}
-    .logo{height: 24px; line-height: 24px; width: 100px; float: left; text-align:  center;padding-left: 30px;}
-    .img-logo{width: 20px; height: 20px;position: relative; left: 10px; top:10px;}
-    .sectionone{background-color: rgb(230, 40, 57); 
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.5rem ; padding-bottom: 100px; line-height: 2.2;}
-    .sectiontwo{background-color: white;font-weight: 300;
-    font-style: normal;
-    font-size: 1.5rem ; padding-top: 300px;line-height: 2.2;}
-    .sectionthree{text-align: right; background-color: white;font-weight: 300;
-    font-style: normal;
-    font-size: 1.5rem ; line-height: 2.2;}
-    .sectionfour{background-color: black; color: white;text-align: center;}
- </style>
+		html{word-break: keep-all;}
+		nav{margin:0;background-color: rgb(230, 40, 57); position: fixed; top:0; height: 50px; width: 100%; z-index: 10}
+    	header{margin:0;background-color: rgb(230, 40, 57); padding-bottom: 100px;}
+    	body{margin:0; width:100%; overflow-x: hidden; overflow-y: auto;}  
+    	.wrap{width: 1000px; margin: auto;}
+    	h2,p, h1, h3, h4{margin: 0 ;} 
+    	h1{font-family: "Song Myung", serif; font-weight: 400; font-style: normal; font-size: 5rem ; text-align: center; color: black;}
+    	h2{font-family: "Noto Serif KR", serif;font-weight: 900;font-style: normal;font-size:3.3rem; color: black; padding-bottom: 50px;}
+    	h3{font-family: "Noto Serif KR", serif;font-weight: 900;font-style: normal;font-size: 1.7rem ;  line-height: 1.6; padding-bottom: 30px;}
+    	p{font-family: "Noto Serif KR", serif; font-weight: 700;font-size: 1.4rem; }
+    	a{display: block; color: black;}
+    	.logo{height: 24px; line-height: 24px; width: 100px; float: left; text-align:  center;padding-left: 30px;}
+    	.img-logo{width: 30px; height: 30px;position: relative; left: 15px; top:15px;}
+    	.section1{background-color: rgb(230, 40, 57); height: 1000px; color: black; }
+    	.section2{background-color: rgb(230, 40, 57);padding: 80px 0px;color: black; }
+    	.section3{background-color: rgb(230, 40, 57); color: black; }
+    	.section4{text-align: left; padding: 130px 0px; width: 30%; text-indent: 150px; color: black; }
+    	.basic{padding: 100px 0px;}
+    	.right{text-align: right;}
+    	.image{opacity: 1; display: inline-block;}
+    	.container{position: relative; left:50%; top: -200px; margin-left: -435px ;display: inline-block; z-index: 8}
+    	.container:hover .image {opacity: 0;}
+    	.center{text-align: center;display: block;}
+    	.side{text-indent: 130px; padding-top:270px; position: relative; z-index: 6}
+    	.flex{display: flex; justify-content: center; }
+    	.flex2{display: flex; justify-content: center; }
+    	.flex3{display: flex; gap: 50px;}
+    	.col2{width: 66.6%}
+    	.col3{width: 33.3%}
+    	.flex div{margin: 50px;}
+    	.flex div div p{text-align: center; width: 210px;}
+    	.col{width:40%; background:white; margin: 0; padding: 70px 30px; background-image: url(background.png);background-size: cover; height: 200px; border: 2.5px solid black;}
+    	.white{background-color: white;color: black; padding-bottom: 100px;}
+    	.black{background-color: black;color: white;}
+    	.happy{background-image: url(happy.png);margin: 0; background-size: cover; background-position: center; padding: 0px; background-attachment: fixed; background-repeat: no-repeat; height: 500px;}
+    	.talk{width: 800px; padding: 50px 0px;display: block;}
+    	.talking{background-image: url(talking.png); background-size: contain; background-repeat: no-repeat; color: black; position: relative; left: 30px; padding-left: 40px; padding-top: 20px; padding-bottom: 40px; padding-right: 70px;margin-bottom: 30px;}
+    	h4{font-family: "Noto Serif KR", serif;font-weight: 600;font-style: normal; font-style: normal;font-size: 1rem ;  line-height: 1.7; display: block;}
+    	.red{color: rgb(230, 40, 57)}
+ 	</style>
 </head>
 <body>
 	<nav>
 		<a href="index.html"><img class="img-logo" src="logo.png"></a>
 		</nav>
 	<header>
-		<img src="bujuk.png" style="display: inline-block; width: 50px; position: relative; top: 150px; left:50%; right: 50%;Overflow: hidden">
-		<img src="bujuke.png" style="display: block; width: 50px; position: relative; top: 230px; left: -330px; margin: auto;">
-		<img src="bujuke.png" style="display: block; width: 50px; position: relative; top:240px; left:170px; margin: auto;">
+		<img src="bujuk.png" style="display: block; width: 90px; margin: auto; padding-top: 200px; position: relative; z-index: 9">
 		<h1>평화로운 퇴마 도구</h1>
-		<img src="bujuke.png" style="display: block; width: 50px; position: relative; top: px; left:-200px; margin: auto;">
-		<img src="bujuke.png" style="display: block; width: 50px; position: relative; top: -200px; left: 390px; margin: auto;">
+		<div class="container">
+			<img src="manymany.png" class="image" style="width: 870px; ">
+			</div>
+	
 	</header>
-	<section class="sectionone">
+	<section class="section1">
 		<div class="wrap">
-		<p>각종 미신이 창궐하는 험난한 세상!</p>
-		<p>2024년 4월 기준,</p>
-		<p>사람에게 해를 끼칠 수 있는 모든 종류의 존재</p>
-		<img src="jonjae.png" style="display: block; width: 30px; position: relative; left: 480px; top: 40px;">
-		<h2>44,444,000 마리</h2>
-		<p>그로 인해 해를 입을 수 있는 모든 종류의 장소</p>
-		<img src="got.png" style="display: block; width: 40px; position: relative; top: 100px; left: 420px;">
-		<h2>6, 666,000 곳</h2>
-		<p>출처, 통계청</p>
-	</div></section>
-	<section class="sectiontwo">
-		<div class="wrap">
-	<h2>이런 당신에게 필요해요</h2>
-	<p> 귀신, 요괴, 악령, 괴물이 귀찮게 굴어</p>
-	<p> 마음이 평안하지 못한 분들 </p>
-	<img src="kim.png" style="display: block; width: 400px; position: relative; top: 0px; left: 600px; padding-bottom: 50px;">
-	<img src="nat.png" style="display: block; width: 400px; position: relative; top: 0px; left: 600px;">
-	<img src="bit.png" style="display: block; width: 400px; position: relative; top: -500px; left: 100px;">
-	</div></section>
+			<div class="center">
+				<h3>각종 미신이 창궐하는 세상!</h3></div>
+			<div class="side">
+				<p>2024년 4월 기준,</p>
+				<p>사람에게 해를 끼칠 수 있는 모든 종류의 존재</p>
+				<h2>44,444,000 마리</h2>
+				<p>그로 인해 해를 입을 수 있는 모든 종류의 장소</p>
+				<h2>6, 666,000 곳</h2>
+				<p>출처, 통계청</p>
+			</div>
+			<img src="tv.png" style=" width: 1000px; position: relative;padding-bottom: 50px; top:-720px; left:50%;margin-left: -500px ;display: inline;">
+			<img src="tv2.gif" style=" width: 1000px; position: relative;padding-bottom: 50px; top:-1620px; left:45%;margin-left: -500px ;display: inline-block; z-index: 7;">
 	</section>
-	<section class="sectionthree">
+	<section class="section2">
 		<div class="wrap">
-			<p> 엘리베이터, 화장실, 지하실, 창고, 뒷골목에서도</p>
-			<p> 혼자서 당당하고 싶으신 분들</p></div></section>
-	<section class="sectionfour">
+			<img src="jonjae.png" style=" width: 20px; position: relative; left:50%;margin-left: -20px ;display: inline-block; padding-top: 100px;">
+			<div class="center">
+				<h3>살면서 심령현상을 겪은 경험이 ‘있다’에 응답한 비율 98.3% </h3>
+			</div>
+			<div class="flex">
+				<div>
+					<div><img src="98.png" style=" width: 200px; display: inline-block;"></div>
+					<div><p>표본집단 1000명 중 983명이 심령현상을 관찰하거나 느낀 적이 있다고 응답</p></div>
+				</div>
+				<div>
+					<div><img src="37.png" style=" width: 200px; display: inline-block;"></div>
+					<div><p>그중 지속적으로 심령현상을 경험하여 스트레스를 호소한 응답자는 374명</p></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section3">		
+		<div class="flex2">
+			<div class="col">
+				<h3>“굿 안 하면 가족들 죽어” 굿값 1억원 챙긴 무당</h3>
+			</div>
+			<div class="col">
+				<h3>귀신 나올 것 같은 폐건물 수십년 방치, 정부도 손 못댄다[부동산360]</h3>
+			</div>
+		</div>
+	</section>
+	<section class="section3">
+			<div class="flex2">
+				<div class="col">
+					<h3>NCT 태용 “연습생 때부터 붙어다니는 귀신 있어”</h3>
+				</div>
+				<div class="col">
+					<h3>출근길에 목격한 처녀귀신… “너무 놀라서 오줌 나올 뻔했습니다”</h3>
+				</div>
+			</div>
+	</section>
+	<section class="section2">
+		<div class="wrap center">
+			<h3>이제 내 몸은 스스로 지켜야 합니다</h3>
+			<p>부르는 게 값인 퇴마사와 무당들은 지긋지긋하고</p>
+			<p>경찰, 소방관, 대통령을 불러도 그들이 뭘 할 수 있겠어요!</p>
+		</div>
+	</section>
+	<section class="section4 white">
 		<div class="wrap">
-			<p>퇴마는 하고 싶은데, 괜히 잘못 건드릴까 두려우신가요?</p> 
+			<h3>퇴마도구, 이런 당신에게 필요해요</h3>
+			<p> 귀신, 요괴, 악령, 괴물이 귀찮게 굴어 일상이 평안하지 못한 분들</p> 
+			<img src="kim.png" style=" width: 420px; display: inline-block; position: relative; left: 600px; top: 200px;">
+			<img src="nat.png" style=" width: 420px; display: inline-block; position: relative; left: 610px; top: 200px;">
+			<img src="bit.png" style=" width: 420px; display: inline-block; position: relative; left: 900px; top: -400px;">
+		</div>
+	</section>
+	<section class=" right white">
+		<div class="wrap">
+			<p>엘리베이터, 화장실, 지하실, 창고, 뒷골목에서도 당당하고 싶으신 분들</p>
+		</div>
+	</section>
+	<div class="happy"></div>
+	<section class="basic black center">
+		<div class="wrap talk">
+			<h3>잠깐, 폭력적인 방식은 안돼요!</h3>
+			<div class="flex3">
+				<div class="col2"> 
+					<div class="talking right">
+						<p>저희 할아버지가 달걀귀신으로 후라이 해먹었다는데 지금 3대가 대머리에요ㅠ</p>
+						<h4>타코*끼 님</h4>
+					</div>
+				</div>
+				<div class="col1">
+					<img src="egg.png" style=" display: inline-block; width: 100px;">
+				</div>
+			</div>
+			<div class="flex3">
+				<div class="col2">
+					<div class="talking right">
+						<p>제가 아는 형님의 아는 누나의 아는 동생이 글쎄 파묘를 하다가...</p>
+						<h4>장*현 님</h4>
+					</div>
+				</div>
+				<div class="col1">
+					<img src="bomb.png" style=" display: inline-block;width: 100px;">
+				</div>
+			</div>
+			<div class="basic">
+				<p>이거 봐요. 괜히 잘못 건드렸다가 큰코 다친다니까요.</p>
+			</div>
+		</div>
+		<div class="red">
+			<h3>대신 평화롭게 그들과의 갈등을 해소할 수 있는 퇴마(退魔) 도구들을 소개합니다.</h3>
+		</div>
+	</section>
+	<section>
+		
+	</section>
+
+		</div>
+	</section>
+	<section class="section5">
+		<div class="wrap">
+			
+		
 
 		</div>
 	</section>
